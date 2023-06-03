@@ -1,0 +1,16 @@
+reset
+
+# set boxwidth 1 absolute
+
+NO_ANIMATION = 1
+
+set xlabel "Время (мс)"
+set ylabel "Размер (эл)"
+
+
+# set bars 4.0
+set grid
+
+# data columns: x min 1quartile median 3quartile max sizeset terminal svg size 1080, 720
+set output "./gnuplot/O0_s2_a2.txtMoustache.svg"
+plot "./graph/O0_s2_a2.txt" using 8:4:3:7:6 with candlesticks title "O0_s2_a2.txt Moustache", "./graph/O0_s2_a2.txt" using 8:2 with lines title "O0_s2_a2.txt"

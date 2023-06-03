@@ -1,0 +1,14 @@
+reset
+
+# set boxwidth 1 absolute
+
+NO_ANIMATION = 1
+
+set xlabel "Размер (эл)"
+set ylabel "Время (мс)"
+
+set yrange [0:300]
+# set bars 4.0
+set grid
+
+# data columns: x min 1quartile median 3quartile max size
